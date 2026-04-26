@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Resume from '../images/Lyanis__Resume.pdf'
 
 const Contact = () => {
+  
+
+    //The next code snippet was taken from Web3Forms
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "a3c15306-43fb-42cf-93b8-497eaf9c3135");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Message Processed. Thank you for reaching out, and I will get to you as soon as possible!" : "Error, please try again");
+  };
+//End of code snippet
+
+
   return (
-    <div classNameName='page'>
+
+    
+    <div className='page'>
         <div id="contact">
         <div className="row">
             <div className="contact-resources">
@@ -20,13 +43,14 @@ const Contact = () => {
                <br />
                 <div className="contact-form">
                     <h3>You can also contact me here:</h3>
-                    <form onsubmit="processInput(event)">
+                    <form onSubmit={onSubmit}>
                         <input type="text" name="Name" id="name" placeholder="Your Name" required />
                         <input type="email" name="Email" id="email" placeholder="Your Email" required />
-                        <textarea name="Message" row="6" id="message" placeholder="Your Message"></textarea>
+                        <textarea name="Message" row="6" id="message" placeholder="Your Message" required></textarea>
                         <br />
                         <button className="button" type="submit">Submit</button>
                     </form>
+                    <p>{result}</p>
                 </div>
         </div>
      </div>

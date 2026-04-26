@@ -1,6 +1,7 @@
 
 import './App.css';
 import { BrowserRouter, Route, Routes} from "react-router";
+import { motion } from "motion/react"
 
 import Home from './pages/Home';
 import About from './pages/About';

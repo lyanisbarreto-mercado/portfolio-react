@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import List from '../lists/List';
+import AboutList from '../lists/AboutList';
+import Profile from "../images/Knitted_Profile.jpg";
 
 const About = () => {
    /* var aboutLinks = document.getElementsByClassName('about-links');
@@ -30,7 +31,7 @@ const About = () => {
         <div id="about">
         <div className="row">
             <div className="about-col-1">
-                <img src="photos/Lyanis Profile Dress.jpg" height="600px" alt="Profile photo" />
+                <img src={Profile} height="600px" alt="Profile photo" />
             </div>
             <div className="about-col-2">
                 <p>A current student at the University of Central Florida (UCF), I am learning to program while also enhancing my skills in art.</p>
@@ -38,7 +39,7 @@ const About = () => {
                 <p>I have developed many artworks—from practice, personal pleasure, to class projects-that have all helped me grow. I have been producing art since my childhood, and it is a great passion of mine. More recently, I have been getting into programming, currently learning HTML, CSS, and JavaScript to produce websites.</p>
 
                  <div className="about-header">
-                    {List.map((cat, index) => {
+                    {AboutList.map((cat, index) => {
                     return (
                         <div>
                             <p 
