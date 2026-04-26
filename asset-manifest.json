@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.67867b05.css",
+    "main.js": "/portfolio-react/static/js/main.149f2651.js",
+    "static/js/453.e9e7ec89.chunk.js": "/portfolio-react/static/js/453.e9e7ec89.chunk.js",
+    "static/media/QuillAndInk.png": "/portfolio-react/static/media/QuillAndInk.ebd4486e6a01a7be7f59.png",
+    "static/media/ReactNative_Exercise.png": "/portfolio-react/static/media/ReactNative_Exercise.087cf11df2dda0020554.png",
+    "static/media/ocean.jpg": "/portfolio-react/static/media/ocean.e32dc84b67bcb12d4a57.jpg",
+    "static/media/kanedifol.png": "/portfolio-react/static/media/kanedifol.717d122782b85c69f6b0.png",
+    "static/media/Assignment4.png": "/portfolio-react/static/media/Assignment4.bc096e138251f3e0b114.png",
+    "static/media/Knitted_Profile.jpg": "/portfolio-react/static/media/Knitted_Profile.ec91ef2f5057f231dab9.jpg",
+    "static/media/Gayathri-Regular.ttf": "/portfolio-react/static/media/Gayathri-Regular.af22026c37fa16e2998d.ttf",
+    "static/media/Lyanis__Resume.pdf": "/portfolio-react/static/media/Lyanis__Resume.e300586c282575b73cb5.pdf",
+    "static/media/Logo.png": "/portfolio-react/static/media/Logo.b080c13a875dc8da5cf7.png",
+    "index.html": "/portfolio-react/index.html",
+    "main.67867b05.css.map": "/portfolio-react/static/css/main.67867b05.css.map",
+    "main.149f2651.js.map": "/portfolio-react/static/js/main.149f2651.js.map",
+    "453.e9e7ec89.chunk.js.map": "/portfolio-react/static/js/453.e9e7ec89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67867b05.css",
+    "static/js/main.149f2651.js"
+  ]
+}
