@@ -1,38 +1,26 @@
 const AboutList = [
+    
     {
-        title: 'Education',
+        title: `Tech Skills`,
         items: [
-            'Valencia College - Associates of Arts',
-            "University of Central Florida - Current Student - Digital Media Major"
+            `HTML`,
+            `CSS`,
+            `JavaScript`,
+            `React`,
+            `GitHub`,
+            `PHP`
         ]
     },
     {
-        title: 'Technical Skills',
+        title: `Soft Skills`,
         items: [
-            'HTML',
-            'CSS',
-            'JavaScript',
-            'React',
-            'GitHub',
-            'PHP'
+            `Communication`,
+            `Problem Solving`,
+            `Creativity`,
+            `Adaptability`,
+            `Learner`
         ]
     },
-    {
-        title: 'Soft Skills',
-        items: [
-            'Communication',
-            'Problem Solving',
-            'Creativity',
-            'Adaptability',
-            'Learner'
-        ]
-    },
-    {
-        title: 'Experience',
-        items: [
-            'Walmart Digital Shopper'
-        ]
-    }
 ]
 
 export default AboutList;

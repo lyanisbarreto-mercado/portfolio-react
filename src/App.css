@@ -7,18 +7,26 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 
 
 /* Pages */
 html {
     scroll-behavior: smooth;
+
 }
 body {
-  background-color: #ECF0F0;
+  background: linear-gradient(180deg, #ECF0F1 34.13%, #C3D1CD 100%);
   color:rgb(28, 32, 32);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Sansation', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
 }
+/* Background color */
+
+
 
 .page {
   margin: 10px 30px;
@@ -58,20 +66,34 @@ hr {
 
 
 /* --------- Navigation --------- */
-nav {
-  display: flex;
-  padding: 5px 20px;
-  list-style: none;
-  align-items: center;
-  text-decoration: none;
-  min-height: 40px;
-  padding-bottom: 3px;
+#nav {
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #3C493F;
+ 
    position: sticky;
     top: 0;
     z-index: 900;
     transition: ease-in-out;
+    width: 100%;
 }
 
+#nav ul {
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+.nav-list {
+    display: flex;
+    padding: 5px 20px;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    min-height: 40px;
+    padding-bottom: 3px;
+}
 
 .nav-left {
   display: flex;
@@ -80,7 +102,7 @@ nav {
   border-radius: 0px;
   text-decoration: none;
   padding: 6px 12px;
-  color: black;
+
   font-size: 20px;
 }
 
@@ -89,7 +111,7 @@ nav {
   transition: transform 0.5s ease-in-out;
   text-decoration: none;
   padding: 6px 12px;
-  color: black;
+
   font-size: 20px;
   display: inline-block;
 }
@@ -97,6 +119,9 @@ nav {
 nav a {
     text-decoration: none;
     color: inherit;
+
+    display: flex;
+    align-items: center;
 }
 
 
@@ -104,17 +129,22 @@ nav a {
   opacity: 75%;
 }
 
-a.nav-right:hover {
-  background-color: aquamarine;
-  opacity: 75%;
+.nav-right:hover {
+
   transform: scale(1.3);
 }
 
-nav:hover {
+.scrolled {
   background-color: #B5DFD1;
   color: aliceblue;
   transition: 0.5s;
 }
+
+
+/* Contact */
+
+
+
 
 /* --------- Footer --------- */
 
@@ -213,24 +243,21 @@ nav:hover {
 }
 
 .about-header {
-    display: flex;
     margin: 20px 0 40px;
 }
 
-.cat-list {
-  
-}
+
 
 .about-links {
     position: relative;
+    font-size: 30px;
     margin-right: 100px;
     font-weight: 300px;
-    cursor: pointer;
     border-bottom: solid 3px #B5DFD1;
     transition: transform 0.5s ease-in-out;
 }
 
-.about-links:hover {
+.about-links-hr:hover {
     transform: scale(1.3);
 }
 
@@ -273,6 +300,88 @@ nav:hover {
     display: block;
     
 }
+
+
+/* --- Education Segment --- */
+.education-cloud {
+    align-content: center;
+    align-items: center;
+
+    background-image: url(components/clouds/education_cloud.png);
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.education-text {
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.education-title h1 {
+    font-family: 'Gayathri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    color: #000000;
+}
+
+.education-title h2 {
+    font-family: 'Gayathri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: -20px;
+    line-height: 37px;
+}
+
+.education-cloud p{
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+
+
+
+
+/* --- Small Cloud Segment --- */
+
+.skill {
+    background-image: url(components/clouds/small_cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    font-family: 'Gayathri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px
+}
+
+
+.cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px
+}
+
+
+
+
+
+
 
 /* --------- Contact --------- */
 #contact {
