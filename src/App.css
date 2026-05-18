@@ -444,6 +444,24 @@ form input, form textarea {
     text-align: center;
 }
 
+/* --- Experience Segment --- */
+
+.experience-block {
+    background-color: #C6D5FB;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    color: #3C493F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.job {
+    display: flex;
+}
 
 /* --------- Projects --------- */
 

@@ -9,7 +9,13 @@ const ProjectList = [
             name: "Game Review Page",
             summary: "In my Mobile Development class, I was tasked to create a Game Review Page using PhP. Pulling information from a database, I created a functional login page.",
             image: Assignment4,
-            url: "https://students.gaim.ucf.edu/~ly165030/dig3134c/labs/assignments/assignment04/admin.php"
+            url: "https://students.gaim.ucf.edu/~ly165030/dig3134c/labs/assignments/assignment04/admin.php",
+            why: "This project tested our ability to pull information form myPHPAdmin. There were two separate databases created: theuser database, and the reviews database. One saved every user's information, including their name, username, and passwords. For safety, these passwords were encrypted through MP5",
+            display() {
+                if (!this.name) {
+                    return `There is no description at the moment`
+                }
+            }
         },
         {
             name: "React Native Exercise App",

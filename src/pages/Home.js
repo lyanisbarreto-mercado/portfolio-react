@@ -116,13 +116,15 @@ const Home = () => {
                                 <div key={i} className='experience-block'>
                                   <div className='experience-title'>
                                     <div className='job'>
-                                      {item.job}
-                                      {item.company}
+                                      <span>{item.job}</span>
+                                      <span>{item.company}</span>
                                     </div>
                                     <div className='date'>
                                       {item.dates}
                                     </div>
+                                  </div>
                                     <ul>
+                                      
                                     
                                       {item.bullets.map((bull, ind) => {
                                         return (
@@ -131,7 +133,7 @@ const Home = () => {
                                       
                                       })}
                                      </ul>
-                                  </div>
+                                  
                                   
                                   
                                 </div>
