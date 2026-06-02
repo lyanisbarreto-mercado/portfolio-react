@@ -7,8 +7,9 @@ const Footer = () => {
         <h4>Resources</h4>
         <ul>
             <li>React</li>
-            <li>CSS</li>
-            <li>VS Code</li>
+            <li>, CSS</li>
+            <li>, VS Code</li>
+            <li>, Bootstrap</li>
         </ul>
         </div>
         <a href="#">Back to top</a>

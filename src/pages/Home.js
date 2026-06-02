@@ -7,6 +7,7 @@ import ExperienceList from '../lists/ExperienceList';
 import Profile from "../images/Knitted_Profile.jpg";
 
 
+
 const Home = () => {
   /* var aboutLinks = document.getElementsByClassName('about-links');
     var aboutDes = document.getElementsByClassName('about-des');
@@ -30,8 +31,13 @@ const Home = () => {
   return (
     <div className='page'>
       
-      <h2 id="hook">"You use a glass mirror to see your face. You use works of art to see your soul." 
-    <br /><span>– George Bernard Shaw</span></h2>
+      <div id="hook">
+        <div id="hook-name">
+          <h2>Lyanis</h2>
+          <h2>Barreto</h2>
+          <h2>Mercado</h2>
+        </div>
+      </div>
 
     <div id="intro" >
       <h1>Welcome!</h1>

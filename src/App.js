@@ -9,13 +9,13 @@ import Contact from './pages/Contact';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
       <Nav/>
-
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
-
+      
       <Footer />
       </BrowserRouter>
     </div>
