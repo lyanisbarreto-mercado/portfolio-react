@@ -187,10 +187,11 @@ nav a {
 
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    gap: 300px;
 
-    text-align: center;
+    text-align: left;
     list-style: none;
 
     font-family: 'Gayathri';
@@ -199,17 +200,22 @@ nav a {
     font-size: 30px;
 
     padding: 20px;
-    margin-left: 0 !important;
+    margin: 0 !important;
     box-sizing: border-box;
 }
 
-#hook-name {
-    text-align: left;
-}
 
-#hook-name > *:nth-child(1) { margin-left: 20px; }
-#hook-name > *:nth-child(2) { margin-left: 40px; }
-#hook-name > *:nth-child(3) { margin-left: 60px; }
+
+#hook-name > *:nth-child(1) { margin-left: 40px; }
+#hook-name > *:nth-child(2) { margin-left: 70px; }
+#hook-name > *:nth-child(3) { margin-left: 100px; }
+
+#quote {
+    padding-top: 20px;
+}
+#quote > *:nth-child(1) { margin-left: 40px; }
+#quote > *:nth-child(2) { margin-left: 70px; }
+#quote > *:nth-child(3) { margin-left: 100px; }
 
 
 #intro {                                                                          background-color: #8AA4E4;
@@ -448,6 +454,7 @@ form input, form textarea {
 .button {
     display: inline-block;
     background-color: darkseagreen;
+    font-size: 18px;
     padding: 6px 12px;
     border-radius: 15px;
     border-color: rgba(0, 0, 0, 0);
@@ -455,7 +462,7 @@ form input, form textarea {
 }
 
 .button:hover {
-    background-color: aquamarine;
+    background-color: rgb(190, 233, 190);
 }
 
 .contact-resources p {
@@ -463,26 +470,32 @@ form input, form textarea {
 }
 
 .social-icons a {
+    background-color: #C6D5FB;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a:hover {
+    background-color: #798bb9;
+    
+}
+
+.social-button {
+    margin-bottom: 30px;
+}
+.social-button > a  {
     text-decoration: none;
     margin-right: 15px;
-    display: inline-block;
-    background-color: darkseagreen;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     color: inherit;
-    padding: 6px 12px;
+    padding: 10px 12px;
     border-radius: 15px;
     transition: background-color 0.3s ease-in-out;
 }
 
-.social-icons a:hover {
-    background-color: aquamarine;
-    
-}
-
-.resume {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 
 /* --- Experience Segment --- */
 

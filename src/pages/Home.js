@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { motion } from "motion/react"
 
 import AboutList from '../lists/AboutList';
 import EducationList from '../lists/EducationList';
 import ExperienceList from '../lists/ExperienceList';
 
 import Profile from "../images/Knitted_Profile.jpg";
+import Hook from '../components/Hook';
 
 
 
@@ -29,20 +31,15 @@ const Home = () => {
     };
   
   return (
+
+    <div>
+      
+      <Hook />
+
     <div className='page'>
       
-      <div id="hook">
-        <div id="hook-name">
-          <h2>Lyanis</h2>
-          <h2>Barreto</h2>
-          <h2>Mercado</h2>
-        </div>
-      </div>
+      
 
-    <div id="intro" >
-      <h1>Welcome!</h1>
-      <h2>I am Lyanis Barreto, Front-End Developer</h2>
-    </div>
         
         <div id="about">
         <div className="row">
@@ -70,6 +67,13 @@ const Home = () => {
                             </p>
                             {cat.items.map((item, i) => {
                               return (
+                                <motion.div                              
+                                    whileHover= {{rotate: 3}}
+                                    transition= {{
+                                      duration: 0.5,
+                                      ease: "easeInOut"
+                                    }}
+                                  >
                                 <div key={i} className='education-cloud'>
                                   <div className='education-text'>
                                       <div className='education-title'>
@@ -79,6 +83,7 @@ const Home = () => {
                                       <p>{item.courses}</p>
                                   </div>
                                 </div>
+                                </motion.div>
                               )
                             })}
                         </div>
@@ -87,6 +92,7 @@ const Home = () => {
 
                     {AboutList.map((cat, index) => {
                     return (
+                    
                         <div>
                             <p 
                             className="about-links"
@@ -97,11 +103,19 @@ const Home = () => {
                             
                                 {cat.items.map((item, i) => {
                                     return (
+                                       <motion.div                              
+                                    whileHover= {{rotate: -5}}
+                                    transition= {{
+                                      duration: 0.5,
+                                      ease: "easeInOut"
+                                    }}
+                                  >
                                             <li
                                             key={i}
                                             className='skill'>
                                                 {item}
                                             </li>
+                                            </motion.div>
                                             )
                                 })} 
                             </ul>
@@ -119,6 +133,7 @@ const Home = () => {
 
                             {cat.items.map((item, i) => {
                               return (
+                                
                                 <div key={i} className='experience-block'>
                                   <div className='experience-title'>
                                     <div className='job'>
@@ -149,6 +164,7 @@ const Home = () => {
                       )
                     })}
                 </div>
+    </div>
     </div>
   )
 }

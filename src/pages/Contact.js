@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 
 import Resume from '../images/Lyanis__Resume.pdf'
 
+import { Linkedin, FilePersonFill, Circle } from "react-bootstrap-icons"
+
+
 const Contact = () => {
   
 
@@ -25,7 +28,7 @@ const Contact = () => {
 
 
   return (
-
+    
     
     <div className='page'>
         <div id="contact">
@@ -35,10 +38,26 @@ const Contact = () => {
                 <p>lyanis.barreto@gmail.com</p>
                 <p>407-821-9626 </p>
                 <div className="social-icons">
-                    <p><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lyanis-rubí-barreto-mercado-6aa606289">LinkedIn</a></p>
-                    <p><a target="_blank" rel="noreferrer" href="https://dot.cards/lyanisbarretomercado">DotCard</a></p>
+                    <div className='social-button'>
+                      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lyanis-rubí-barreto-mercado-6aa606289">
+                      <Linkedin />
+                      <span>LinkedIn</span>
+                      </a>
+                    </div>
+
+                    <div className='social-button'>
+                      <a target="_blank" rel="noreferrer" href="https://dot.cards/lyanisbarretomercado">
+                        <Circle />
+                        <span>DotCard</span>
+                      </a>
+                    </div>
                     
-                    <p className="resume"><a target="_blank" rel="noreferrer" className="button" download="Lyanis_Barreto.pdf" href={Resume}><i className="fa-regular fa-file"></i> Download Resume</a></p>
+                    <div className='social-button'>
+                      <a target="_blank" rel="noreferrer" download="Lyanis_Barreto.pdf" href={Resume}>
+                        <FilePersonFill />
+                        <span className="resume">Download Resume</span>
+                      </a>
+                    </div>
             </div>
                <br />
                 <div className="contact-form">
