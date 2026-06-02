@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from "motion/react"
+import { easeIn, motion } from "motion/react"
 
 import AboutList from '../lists/AboutList';
 import EducationList from '../lists/EducationList';
@@ -36,7 +36,14 @@ const Home = () => {
       
       <Hook />
 
-    <div className='page'>
+    <motion.div className='page'
+        initial={{opacity: 0}}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition= {{
+        duration: 0.5,
+        ease: "easeIn"
+      }}>
       
       
 
@@ -164,7 +171,7 @@ const Home = () => {
                       )
                     })}
                 </div>
-    </div>
+    </motion.div>
     </div>
   )
 }

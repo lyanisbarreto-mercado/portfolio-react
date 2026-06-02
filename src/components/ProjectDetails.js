@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { motion } from "motion/react"
+
 import ProjectList from '../lists/ProjectList';
 
 import { XCircle } from 'react-bootstrap-icons';
@@ -18,13 +20,25 @@ const ProjectDetails = ({name, summary, image, url, why, challenge, conclusion, 
         setSelectedImage(null);
     }
     return (
-    <div className="modal-overlay">
+        <motion.div 
+        className="modal-overlay"
+        initial= {{y: "100vh", opacity: 0}} 
+        animate={{ y: 0, opacity: 1}}
+        transition={{
+            type: "spring",
+    stiffness: 120,
+    damping: 20,
+        }}
+        >
+    
         <div className="project-modal">
             <div className='project-modal-content'>
                 <div className='project-modal-top'>
                     <h1>{name}</h1>
                     <XCircle onClick={closeModal}/>
+                    
                 </div>
+                <hr />
                     <h2>Purpose</h2>
                         <p>{why}</p>
                     <h2>Challenge</h2>
@@ -49,7 +63,7 @@ const ProjectDetails = ({name, summary, image, url, why, challenge, conclusion, 
                     />
                 </div>
             )}
-    </div>
+    </motion.div>
   )
 }
 

@@ -40,7 +40,7 @@ const Projects = () => {
     
           })}
       </div>
-
+          
           {modal && selectedProject && (
             <ProjectDetails
             {...selectedProject}
