@@ -46,7 +46,7 @@ const ProjectDetails = ({name, summary, image, url, why, challenge, conclusion, 
                     <h2>Conclusion</h2>
                         <p>{conclusion}</p>
                     <h2>Where to view</h2>
-                    <p>{url}</p>
+                    <p><a target='_blank' href={url}>{url}</a></p>
 
                     <img src={image} 
                     alt={name} 

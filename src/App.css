@@ -49,14 +49,14 @@ h3 {
  }
 
 hr {
-    border-color: aquamarine;
-    margin-top: 50px;
+    border-color: #B5DFD1;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
 .hr-nav {
-    color: aquamarine;
-    background-color: aquamarine;
+    color: #B5DFD1;
+    background-color: #B5DFD1;
     height: 3px;
     width: 100%;
     margin-top: 10px;
@@ -206,9 +206,9 @@ nav a {
 
 
 
-#hook-name > *:nth-child(1) { margin-left: 40px; }
-#hook-name > *:nth-child(2) { margin-left: 70px; }
-#hook-name > *:nth-child(3) { margin-left: 100px; }
+#hook-name > *:nth-child(1) { margin-left: 60px; }
+#hook-name > *:nth-child(2) { margin-left: 100px; }
+#hook-name > *:nth-child(3) { margin-left: 140px; }
 
 #quote {
     padding-top: 20px;
@@ -239,7 +239,7 @@ nav a {
 /* --------- About --------- */
 #about {
     padding: 80px 0;
-    color: darkslategrey;
+    color: black;
 }
 
 .myheader {
@@ -253,16 +253,16 @@ nav a {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     flex-wrap: wrap;
 }
 
 .about-col-1 {
-    flex-basis: 35%;
+    flex-basis: 40%;
 }
 
 .about-col-1 img {
-    width: 75%;
+    width: 80%;
     height: auto;
     border-radius: 15px;
 
@@ -301,7 +301,7 @@ nav a {
     content: '';
     width: 0;
     height: 3px;
-    background-color: aquamarine;
+    background-color: #B5DFD1;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -411,7 +411,7 @@ nav a {
     font-family: 'Gayathri';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
 
     padding: 20px;
     box-sizing: border-box;
@@ -511,11 +511,15 @@ form input, form textarea {
     color: #3C493F;
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .job {
     display: flex;
+    flex-direction: column;
 }
+
+
 
 /* --------- Projects --------- */
 
@@ -542,7 +546,7 @@ form input, form textarea {
     gap: 10px;
 
     width: 500px;
-    max-height: 500px;
+    height: 500px;
 
     background: #8AA4E4;
     border-radius: 18px;

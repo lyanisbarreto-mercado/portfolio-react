@@ -10,6 +10,7 @@ const Footer = () => {
             <li>, CSS</li>
             <li>, VS Code</li>
             <li>, Bootstrap</li>
+            <li>, Framer Motion</li>
         </ul>
         </div>
         <a href="#">Back to top</a>

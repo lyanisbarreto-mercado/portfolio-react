@@ -37,11 +37,11 @@ const Home = () => {
       <Hook />
 
     <motion.div className='page'
-        initial={{opacity: 0}}
-      whileInView={{ opacity: 1 }}
+      initial={{opacity: 0, y: 50}}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition= {{
-        duration: 0.5,
+        duration: 0.8,
         ease: "easeIn"
       }}>
       
@@ -57,7 +57,9 @@ const Home = () => {
             <div className="about-col-2">
                 <p>A current student at the University of Central Florida (UCF), I am learning to program while also enhancing my skills in art.</p>
                 
-                <p>I have developed many artworks—from practice, personal pleasure, to class projects-that have all helped me grow. I have been producing art since my childhood, and it is a great passion of mine. More recently, I have been getting into programming, currently learning HTML, CSS, and JavaScript to produce websites.</p>
+                <p>I have developed many artworks—from practice, personal pleasure, to class projects-that have all helped me grow. I have been producing art since my childhood, and it is a great passion of mine. More recently, I have been getting into programming, currently learning React to produce websites — much like this one.</p>
+
+                <p>I take into consideration what users notice when reviewing sites. They are the most important feedback one will get when designing a site, as they will be noting their first impressions. Learning to create the best first impression for a user is my ultimate goal!</p>
           </div>
     </div>
     </div>
@@ -140,7 +142,11 @@ const Home = () => {
 
                             {cat.items.map((item, i) => {
                               return (
-                                
+                                <motion.div 
+                                whileHover={ {scale: 1.05}}
+                                transition={{
+                                  duration: 0.3
+                                }}>
                                 <div key={i} className='experience-block'>
                                   <div className='experience-title'>
                                     <div className='job'>
@@ -165,6 +171,7 @@ const Home = () => {
                                   
                                   
                                 </div>
+                                </motion.div>
                               )
                             })}
                         </div>
