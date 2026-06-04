@@ -36,8 +36,8 @@ const Nav = () => {
             </Link>
         </li>
             
-            <li className={`nav-right ${activeLink === 'portfolio-react/projects' ? 'active navbar-link' : 'navbar-link'}`} onClick={() => onUpdateActiveLink('projects')}><Link to="/projects" >Projects</Link></li>
-           <li className={`nav-right ${activeLink === 'portfolio-react/contact' ? 'active navbar-link' : 'navbar-link'}`} onClick={() => onUpdateActiveLink('contact')}><Link to="/contact">Want to Connect?</Link></li> 
+            <li className={`nav-right ${activeLink === 'portfolio-react/projects' ? 'active navbar-link' : 'navbar-link'}`} onClick={() => onUpdateActiveLink('projects')}><Link to="portfolio-react/projects" >Projects</Link></li>
+           <li className={`nav-right ${activeLink === 'portfolio-react/contact' ? 'active navbar-link' : 'navbar-link'}`} onClick={() => onUpdateActiveLink('contact')}><Link to="portfolio-react/contact">Want to Connect?</Link></li> 
         
         </nav>
       </ul>
