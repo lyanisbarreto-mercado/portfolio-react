@@ -26,9 +26,7 @@ const Home = () => {
     }*/
 
    const [active, setActive] = useState('');
-    const handleClick = (index) => {
-        setActive(index)
-    };
+   
   
   return (
 
