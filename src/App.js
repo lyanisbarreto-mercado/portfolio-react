@@ -18,9 +18,9 @@ function App() {
       <Nav/>
       <Routes>
 
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="portfolio-react/" element={<Home />} />
+        <Route path="portfolio-react/projects" element={<Projects />} />
+        <Route path="portfolio-react/contact" element={<Contact />} />
 
       </Routes>
       
