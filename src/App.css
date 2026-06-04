@@ -173,7 +173,7 @@ nav a {
 
 #footer li {
     list-style: none;
-    
+    max-width: 33%;
 }
 
 
