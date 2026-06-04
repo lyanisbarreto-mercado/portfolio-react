@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.0edf589d.css",
-    "main.js": "/portfolio-react/static/js/main.1cc1bc42.js",
+    "main.js": "/portfolio-react/static/js/main.8ca8e6e6.js",
     "static/js/453.fd2f0c4a.chunk.js": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js",
     "static/media/QuillAndInk.png": "/portfolio-react/static/media/QuillAndInk.ebd4486e6a01a7be7f59.png",
     "static/media/ReactNative_Exercise.png": "/portfolio-react/static/media/ReactNative_Exercise.087cf11df2dda0020554.png",
@@ -17,11 +17,11 @@
     "static/media/small_cloud.png": "/portfolio-react/static/media/small_cloud.bd56bd0bdf8d440caffd.png",
     "index.html": "/portfolio-react/index.html",
     "main.0edf589d.css.map": "/portfolio-react/static/css/main.0edf589d.css.map",
-    "main.1cc1bc42.js.map": "/portfolio-react/static/js/main.1cc1bc42.js.map",
+    "main.8ca8e6e6.js.map": "/portfolio-react/static/js/main.8ca8e6e6.js.map",
     "453.fd2f0c4a.chunk.js.map": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0edf589d.css",
-    "static/js/main.1cc1bc42.js"
+    "static/js/main.8ca8e6e6.js"
   ]
 }
