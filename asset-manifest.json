@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.0edf589d.css",
+    "main.js": "/portfolio-react/static/js/main.1cc1bc42.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js",
+    "static/media/QuillAndInk.png": "/portfolio-react/static/media/QuillAndInk.ebd4486e6a01a7be7f59.png",
+    "static/media/ReactNative_Exercise.png": "/portfolio-react/static/media/ReactNative_Exercise.087cf11df2dda0020554.png",
+    "static/media/kanedifol.png": "/portfolio-react/static/media/kanedifol.717d122782b85c69f6b0.png",
+    "static/media/Assignment4.png": "/portfolio-react/static/media/Assignment4.bc096e138251f3e0b114.png",
+    "static/media/Knitted_Profile.jpg": "/portfolio-react/static/media/Knitted_Profile.ec91ef2f5057f231dab9.jpg",
+    "static/media/Gayathri-Regular.ttf": "/portfolio-react/static/media/Gayathri-Regular.af22026c37fa16e2998d.ttf",
+    "static/media/Lyanis__Resume.pdf": "/portfolio-react/static/media/Lyanis__Resume.e300586c282575b73cb5.pdf",
+    "static/media/intro_cloud.png": "/portfolio-react/static/media/intro_cloud.028c46f224f3dffb3610.png",
+    "static/media/RayExpressLogo.png": "/portfolio-react/static/media/RayExpressLogo.ea5b2c596fe7408580a2.png",
+    "static/media/Logo.png": "/portfolio-react/static/media/Logo.b080c13a875dc8da5cf7.png",
+    "static/media/education_cloud.png": "/portfolio-react/static/media/education_cloud.24b7f7f329ddf2ba9a15.png",
+    "static/media/small_cloud.png": "/portfolio-react/static/media/small_cloud.bd56bd0bdf8d440caffd.png",
+    "index.html": "/portfolio-react/index.html",
+    "main.0edf589d.css.map": "/portfolio-react/static/css/main.0edf589d.css.map",
+    "main.1cc1bc42.js.map": "/portfolio-react/static/js/main.1cc1bc42.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0edf589d.css",
+    "static/js/main.1cc1bc42.js"
+  ]
+}
