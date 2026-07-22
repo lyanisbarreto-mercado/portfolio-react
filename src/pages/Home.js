@@ -45,14 +45,19 @@ const Home = () => {
       
       
 
-        
-        <div id="about">
-        <div className="row">
-            <div className="about-col-1">
-                <img src={Profile} height="100px" alt="Profile" />
+        {/*ABOUT SECTION*/}
+
+        <div className="py-20">
+        <div className="grid gap-10 lg:grid-cols-5 lg:items-center">
+            <div className="lg:col-span-2 flex justify-center">
+                <img
+                    src={Profile}
+                    alt="Profile"
+                    className="w-4/5 rounded-2xl shadow-lg"
+                />
             </div>
             
-            <div className="about-col-2">
+            <div className="space-y-6 lg:col-span-3 text-[16px] md:text-[18] leading-[28px]">
                 <p>A current student at the University of Central Florida (UCF), I am learning to program while also enhancing my skills in art.</p>
                 
                 <p>I have developed many artworks—from practice, personal pleasure, to class projects-that have all helped me grow. I have been producing art since my childhood, and it is a great passion of mine. More recently, I have been getting into programming, currently learning React to produce websites — much like this one.</p>
@@ -62,14 +67,14 @@ const Home = () => {
     </div>
     </div>
 
+
+      {/*ABOUT HEADER*/}
     <div className="about-header">
 
                     {EducationList.map((cat, index) => { //cat means category
                       return (
                         <div key={index}>
-                          <p 
-                            className="about-links"
-                            >
+                          <p className="mb-8 border-b-4 border-[#B5DFD1] pb-2 text-[26px] md:text-[34px] font-bold">
                                 {cat.title}
                             </p>
                             {cat.items.map((item, i) => {
@@ -81,13 +86,29 @@ const Home = () => {
                                       ease: "easeInOut"
                                     }}
                                   >
-                                <div key={i} className='education-cloud'>
-                                  <div className='education-text'>
-                                      <div className='education-title'>
-                                          <h1>{item.college}</h1>
-                                          <h2>{item.degree}</h2>
+                                <div
+                                    className="
+                                        mb-8
+                                        bg-contain
+                                        bg-no-repeat
+                                        drop-shadow-lg
+                                    "
+                                    style={{
+                                        backgroundImage: "url(/components/clouds/education_cloud.png)",
+                                    }}
+                                >
+                                  <div className="px-24 py-16">
+                                      <div className="mb-4">
+                                          <h1 className="text-3xl font-bold">
+                                              {item.college}
+                                          </h1>
+                                          <h2 className="text-2xl font-medium">
+                                              {item.degree}
+                                          </h2>
                                       </div>
-                                      <p>{item.courses}</p>
+                                      <p className="text-lg leading-7">
+                                          {item.courses}
+                                      </p>
                                   </div>
                                 </div>
                                 </motion.div>
@@ -106,7 +127,7 @@ const Home = () => {
                             key={index}>
                                 {cat.title}
                             </p>
-                           <ul className='cat-list'>
+                           <ul className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                             
                                 {cat.items.map((item, i) => {
                                     return (
@@ -118,8 +139,25 @@ const Home = () => {
                                     }}
                                   >
                                             <li
-                                            key={i}
-                                            className='skill'>
+                                              key={i}
+                                              className="
+                                                  flex
+                                                  h-36
+                                                  w-52
+                                                  items-center
+                                                  justify-center
+                                                  bg-contain
+                                                  bg-center
+                                                  bg-no-repeat
+                                                  text-center
+                                                  text-xl
+                                                  font-bold
+                                                  drop-shadow-lg
+                                              "
+                                              style={{
+                                                  backgroundImage: "url(/components/clouds/small_cloud.png)",
+                                              }}
+                                          >
                                                 {item}
                                             </li>
                                             </motion.div>
@@ -129,38 +167,39 @@ const Home = () => {
                         </div>
                     )})}
 
-
+                {/*EXPERIENCE LIST */}
                     {ExperienceList.map((cat, index) => { //cat means category
                       return (
                         <div key={index}>
                           <p 
-                            className="about-links">
+                            className="text-[26px] md:text-[34px]">
                                 {cat.title}
                             </p>
 
                             {cat.items.map((item, i) => {
                               return (
                                 <motion.div 
-                                whileHover={ {scale: 1.05}}
+                                whileHover={ {scale: 1.015}}
                                 transition={{
                                   duration: 0.3
                                 }}>
-                                <div key={i} className='experience-block'>
-                                  <div className='experience-title'>
-                                    <div className='job'>
-                                      <span>{item.job}</span>
-                                      <span>{item.company}</span>
+                                <div key={i} className="mb-6 rounded-3xl bg-[#C6D5FB] p-6 shadow-md">
+                                  <div className="mb-4 flex flex-col justify-between gap-2 md:flex-row">
+                                    <div className="flex flex-col">
+                                      <span className='text-[22px] md:text-[28px] font-bold'>{item.job}</span>
+                                      <span className='font-semibold text-[16px]'>{item.company}</span>
                                     </div>
-                                    <div className='date'>
+                                    <div className="font-semibold text-[#3C493F] text-[16px]">
                                       {item.dates}
                                     </div>
                                   </div>
-                                    <ul>
+                                    <ul className="ml-6 list-disc space-y-2" >
                                       
                                     
                                       {item.bullets.map((bull, ind) => {
                                         return (
-                                          <li key={ind}>{bull}</li>
+                                          <li key={ind}
+                                          className='text-[16px] md:text-[18px]'>{bull}</li>
                                         )
                                       
                                       })}

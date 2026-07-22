@@ -1,70 +1,135 @@
-import React, { useState } from 'react';
-import { motion } from "motion/react"
+import React, { useState } from "react";
+import { motion } from "motion/react";
+import { XCircle } from "react-bootstrap-icons";
 
-import ProjectList from '../lists/ProjectList';
+const ProjectDetails = ({
+  name,
+  summary,
+  image,
+  url,
+  why,
+  challenge,
+  conclusion,
+  closeModal,
+}) => {
+  const [imageModal, setImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-import { XCircle } from 'react-bootstrap-icons';
+  const openImageModal = (data) => {
+    setSelectedImage(data);
+    setImageModal(true);
+  };
 
-const ProjectDetails = ({name, summary, image, url, why, challenge, conclusion, closeModal}) => {
-  
-    const [imageModal, setImageModal] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
+  const closeImageModal = () => {
+    setImageModal(false);
+    setSelectedImage(null);
+  };
 
-    const openImageModal = (data) => {
-        setSelectedImage(data);
-        setImageModal(true);
-    }
-
-    const closeImageModal = () => {
-        setImageModal(false);
-        setSelectedImage(null);
-    }
-    return (
-        <motion.div 
-        className="modal-overlay"
-        initial= {{y: "100vh", opacity: 0}} 
-        animate={{ y: 0, opacity: 1}}
+  return (
+    <>
+      <motion.div
+        className="fixed inset-0 z-950 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+        initial={{ y: "100vh", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{
-            type: "spring",
-    stiffness: 120,
-    damping: 20,
+          type: "spring",
+          stiffness: 120,
+          damping: 20,
         }}
-        >
-    
-        <div className="project-modal">
-            <div className='project-modal-content'>
-                <div className='project-modal-top'>
-                    <h1>{name}</h1>
-                    <XCircle onClick={closeModal}/>
-                    
-                </div>
-                <hr />
-                    <h2>Purpose</h2>
-                        <p>{why}</p>
-                    <h2>Challenge</h2>
-                        <p>{challenge}</p>
-                    <h2>Conclusion</h2>
-                        <p>{conclusion}</p>
-                    <h2>Where to view</h2>
-                    <p><a target='_blank' rel="noreferrer" href={url}>{url}</a></p>
+      >
+        <div className="max-h-[90vh] w-full max-w-[1200px] overflow-y-auto rounded-3xl bg-white shadow-2xl z-[999]">
+          <div className="p-8">
+            {/* Header */}
+            <div className="mb-6 flex items-center justify-between">
+              <h1 className="text-4xl font-bold">{name}</h1>
 
-                    <img src={image} 
-                    alt={name} 
-                    onClick={() => openImageModal(image)}
-                    />
+              <button
+                onClick={closeModal}
+                className="transition hover:scale-110 hover:text-red-500"
+              >
+                <XCircle size={36} />
+              </button>
             </div>
-      </div>
-            {imageModal && (
-                <div className="image-modal-overlay" onClick={closeImageModal}>
-                    <img
-                    src={selectedImage}
-                    alt={name}
-                    className="image-modal"
-                    />
-                </div>
-            )}
-    </motion.div>
-  )
-}
 
-export default ProjectDetails
+            <hr className="mb-8" />
+            {/* Image */}
+            <img
+              src={image}
+              alt={name}
+              onClick={() => openImageModal(image)}
+              className="
+                w-full
+                max-h-[500px]
+                object-cover
+                cursor-pointer
+                rounded-2xl
+                shadow-lg
+                transition
+                duration-300
+                hover:scale-[1.02]
+                mb-5
+              "
+            />
+
+            {/* Sections */}
+            <section className="mb-8">
+              <h2 className="mb-2 text-2xl font-bold">Purpose</h2>
+              <p className="leading-7">{why}</p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="mb-2 text-2xl font-bold">Challenge</h2>
+              <p className="leading-7">{challenge}</p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="mb-2 text-2xl font-bold">Conclusion</h2>
+              <p className="leading-7">{conclusion}</p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="mb-2 text-2xl font-bold">Where to View</h2>
+
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className="break-all text-blue-700 underline hover:text-blue-900"
+              >
+                {url}
+              </a>
+            </section>
+
+            
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Fullscreen Image */}
+      {imageModal && (
+        <div
+          className="
+            fixed inset-0 z-[999]
+            flex items-center justify-center
+            bg-black/90
+            p-6
+          "
+          onClick={closeImageModal}
+        >
+          <img
+            src={selectedImage}
+            alt={name}
+            className="
+              max-h-full
+              max-w-full
+              rounded-xl
+              shadow-2xl
+            "
+          />
+        </div>
+      )}
+    </>
+  );
+};
+
+export default ProjectDetails;

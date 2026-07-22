@@ -3,6 +3,18 @@ const ExperienceList = [
         title: `Experience`,
         items: [
             {
+                job: `Web Design Intern`,
+                company: `Hiroshi Tsunoda Design Studio (HTDS)`,
+                dates: `June 2026 - July 2026`,
+                bullets: 
+                    [`Updated the portfolio site of the company through GitHub, staying aligned with user needs and navigation`,
+
+                    `Designed several layouts and collaborated with team members to create a cohesive page with new information.`,
+
+                    `Promptly kept the website updated when new information arrived, and ensured that the information was correct and accurate between three languages.`
+                    ]
+            },
+            {
                 job: `Digital Shopper`,
                 company: `Walmart Digital Shopper`,
                 dates: `September 2022 - Present`,

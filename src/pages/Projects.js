@@ -22,7 +22,7 @@ const Projects = () => {
 
   return (
     <div className='page'>
-      <div id='project-list'>
+      <div className='grid md:grid-cols-3 gap-10'>
       
       {ProjectList.map((list, index) => {
           return (
