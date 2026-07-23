@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.9ff387bf.css",
-    "main.js": "/portfolio-react/static/js/main.83c03edf.js",
+    "main.css": "/portfolio-react/static/css/main.66ebb5cd.css",
+    "main.js": "/portfolio-react/static/js/main.bf8b3c0f.js",
     "static/js/453.fd2f0c4a.chunk.js": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js",
     "static/media/QuillAndInk.png": "/portfolio-react/static/media/QuillAndInk.ebd4486e6a01a7be7f59.png",
     "static/media/ReactNative_Exercise.png": "/portfolio-react/static/media/ReactNative_Exercise.087cf11df2dda0020554.png",
     "static/media/kanedifol.png": "/portfolio-react/static/media/kanedifol.717d122782b85c69f6b0.png",
     "static/media/Assignment4.png": "/portfolio-react/static/media/Assignment4.bc096e138251f3e0b114.png",
+    "static/media/DevelopHers.png": "/portfolio-react/static/media/DevelopHers.e2897ca496ed6fedbca4.png",
     "static/media/Knitted_Profile.jpg": "/portfolio-react/static/media/Knitted_Profile.ec91ef2f5057f231dab9.jpg",
     "static/media/Gayathri-Regular.ttf": "/portfolio-react/static/media/Gayathri-Regular.af22026c37fa16e2998d.ttf",
     "static/media/Lyanis__Resume.pdf": "/portfolio-react/static/media/Lyanis__Resume.e300586c282575b73cb5.pdf",
@@ -16,12 +17,12 @@
     "static/media/education_cloud.png": "/portfolio-react/static/media/education_cloud.24b7f7f329ddf2ba9a15.png",
     "static/media/small_cloud.png": "/portfolio-react/static/media/small_cloud.bd56bd0bdf8d440caffd.png",
     "index.html": "/portfolio-react/index.html",
-    "main.9ff387bf.css.map": "/portfolio-react/static/css/main.9ff387bf.css.map",
-    "main.83c03edf.js.map": "/portfolio-react/static/js/main.83c03edf.js.map",
+    "main.66ebb5cd.css.map": "/portfolio-react/static/css/main.66ebb5cd.css.map",
+    "main.bf8b3c0f.js.map": "/portfolio-react/static/js/main.bf8b3c0f.js.map",
     "453.fd2f0c4a.chunk.js.map": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ff387bf.css",
-    "static/js/main.83c03edf.js"
+    "static/css/main.66ebb5cd.css",
+    "static/js/main.bf8b3c0f.js"
   ]
 }
