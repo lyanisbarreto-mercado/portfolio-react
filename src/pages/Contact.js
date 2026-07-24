@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Resume from "../images/Lyanis__Resume.pdf";
+import Resume from "../images/Lyanis_Barreto_Mercado_Resume.pdf";
 
 import {
   Linkedin,
@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mx-auto max-w-[1200px] px-6 py-12">
+    <div className="mx-auto max-w-[1200px] px-6 py-12 pb-[120px]">
       <div className="flex flex-col lg:flex-row lg:gap-20 items-center text-center">
         <div className="w-full">
           <h1 className="mb-8 text-[30px] md:text-[40px] font-bold">
@@ -100,7 +100,7 @@ const Contact = () => {
 
             <a
               href={Resume}
-              download="Lyanis_Barreto.pdf"
+              download="Lyanis_BarretoMercado_Resume.pdf"
               className="
                 flex
                 items-center

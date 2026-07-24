@@ -7,6 +7,14 @@ const Nav = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant' 
+    });
+  }, [activeLink]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -63,7 +71,7 @@ const Nav = () => {
           <h1
             className="block text-[20px] md:hidden"
           >
-            Lyanis
+            Lyanis BM
           </h1>
         </Link>
 
@@ -82,9 +90,9 @@ const Nav = () => {
               ml-5 px-3 py-1.5
               text-lg md:text-xl
               inline-block
-              transition-transform duration-500
+              transition-transform transition-colors duration-500
               hover:scale-110
-              ${activeLink === "projects" ? "text-white" : ""}
+              ${activeLink === "projects" ? scrolled ? "text-white" : "text-[#1B6A50]" : ""}
             `}
           >
             Projects
@@ -99,7 +107,7 @@ const Nav = () => {
               inline-block
               transition-transform duration-500
               hover:scale-110
-              ${activeLink === "contact" ? "text-white" : ""}
+               ${activeLink === "contact" ? scrolled ? "text-white" : "text-[#1B6A50]" : ""}
             `}
           >
             Want to Connect?

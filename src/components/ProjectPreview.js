@@ -10,7 +10,7 @@ const ProjectPreview = ({ name, summary, url, image }) => {
     >
       <div
         className="
-          flex h-full max-w-[500px] flex-col
+          flex h-[570px] max-w-[500px] flex-col
           overflow-hidden rounded-2xl
           bg-[#8AA4E4]
           shadow-lg

@@ -103,7 +103,7 @@ hr {
     font-family: 'Gayathri';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
 
     padding: 20px;
     margin: 0 !important;
@@ -112,16 +112,12 @@ hr {
 
 
 
-#hook-name > *:nth-child(1) { margin-left: 60px; }
-#hook-name > *:nth-child(2) { margin-left: 100px; }
-#hook-name > *:nth-child(3) { margin-left: 140px; }
-
 #quote {
     padding-top: 20px;
 }
-#quote > *:nth-child(1) { margin-left: 40px; }
-#quote > *:nth-child(2) { margin-left: 70px; }
-#quote > *:nth-child(3) { margin-left: 100px; }
+#quote > *:nth-child(1) { margin-left: 100px; }
+#quote > *:nth-child(2) { margin-left: 140px; }
+#quote > *:nth-child(3) { margin-left: 180px; }
 
 
 #intro {                                                                          background-color: #8AA4E4;
