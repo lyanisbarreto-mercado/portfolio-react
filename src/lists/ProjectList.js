@@ -20,7 +20,7 @@ const ProjectList = [
            name: "DevelopHers",
            summary: "A site developed during a project challenge at Girls Who Code. Dedicated to women in STEM, it would provide a platform for women to network, connect, and display their projects in an easy to view manner. ",
            image: DevelopHers ,
-           url: "https://lnkd.in/exTMiFRG",
+           url: "",
            why: "Our group tackled the idea of having a platform to display Portfolio Works. An easy way to display your profile and live sites all in one place, while also having the feature of connecting with other women in the STEM field. It is both a portoflio and a networking site with shared common interests.",
            challenge: "For a majority of the group, it was our first time combining Front-End and Backend development. Tying in a secure login  for returning users, to displaying public user information based on their personalized portfolio site was difficult. It took much collaboration, discussion, and troubleshooting. But as we all worked together, we found different solutions, which we ultimately combined to seemesly combine the front-end and back-end together in a clear manner.",
             conclusion: "We presented a site that has several intriging visuals, with the possibility of different templates to personalize the user's page. Users can also look at other's portfolios and see their works. If this site were to become reality, we can include a messaging feature, more filters in the search, and more templates for users to style."

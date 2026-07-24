@@ -37,7 +37,7 @@ const ProjectDetails = ({
           damping: 20,
         }}
       >
-        <div className="max-h-[90vh] w-full max-w-[1200px] overflow-y-auto rounded-3xl bg-white shadow-2xl z-[999]">
+        <div className="max-h-[82vh] w-full max-w-[1200px] overflow-y-auto rounded-3xl bg-white shadow-2xl z-[999]">
           <div className="p-8">
             {/* Header */}
             <div className="mb-6 flex items-center justify-between">

@@ -60,7 +60,7 @@ const Nav = () => {
           <img
             src={Logo}
             alt="Logo with the initials LB"
-            className="max-h-[40px] md:max-h-[70px]"
+            className="max-h-[30px] md:max-h-[50px]"
           />
 
           <h1

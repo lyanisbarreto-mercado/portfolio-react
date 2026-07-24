@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mx-auto max-w-[1200px] px-6 py-12 pb-[120px]">
+    <div className="mx-auto max-w-[1200px] px-6 py-12 pb-[125px]">
       <div className="flex flex-col lg:flex-row lg:gap-20 items-center text-center">
         <div className="w-full">
           <h1 className="mb-8 text-[30px] md:text-[40px] font-bold">
