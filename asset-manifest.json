@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.eb424b33.css",
-    "main.js": "/portfolio-react/static/js/main.e45b8e23.js",
+    "main.css": "/portfolio-react/static/css/main.db5b4c6f.css",
+    "main.js": "/portfolio-react/static/js/main.b1fee915.js",
     "static/js/453.fd2f0c4a.chunk.js": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js",
     "static/media/QuillAndInk.png": "/portfolio-react/static/media/QuillAndInk.ebd4486e6a01a7be7f59.png",
     "static/media/ReactNative_Exercise.png": "/portfolio-react/static/media/ReactNative_Exercise.087cf11df2dda0020554.png",
@@ -17,12 +17,12 @@
     "static/media/education_cloud.png": "/portfolio-react/static/media/education_cloud.24b7f7f329ddf2ba9a15.png",
     "static/media/small_cloud.png": "/portfolio-react/static/media/small_cloud.bd56bd0bdf8d440caffd.png",
     "index.html": "/portfolio-react/index.html",
-    "main.eb424b33.css.map": "/portfolio-react/static/css/main.eb424b33.css.map",
-    "main.e45b8e23.js.map": "/portfolio-react/static/js/main.e45b8e23.js.map",
+    "main.db5b4c6f.css.map": "/portfolio-react/static/css/main.db5b4c6f.css.map",
+    "main.b1fee915.js.map": "/portfolio-react/static/js/main.b1fee915.js.map",
     "453.fd2f0c4a.chunk.js.map": "/portfolio-react/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb424b33.css",
-    "static/js/main.e45b8e23.js"
+    "static/css/main.db5b4c6f.css",
+    "static/js/main.b1fee915.js"
   ]
 }
